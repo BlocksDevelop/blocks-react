@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/index.ts"],
+  "sourcesContent": ["// export * as variables from \"./variables\";\r\n\r\nfunction sum(a: number, b: number): number {\r\n  return a + b;\r\n}\r\n\r\nexport { sum };\r\n"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,SAAAE,IAAA,eAAAC,EAAAH,GAEA,SAASE,EAAIE,EAAWC,EAAmB,CACzC,OAAOD,EAAIC,CACb",
+  "names": ["src_exports", "__export", "sum", "__toCommonJS", "a", "b"]
+}

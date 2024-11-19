@@ -1,11 +1,20 @@
 import esbuild from "esbuild";
-import pkg from "./package.json" assert { type: "json" };
 
 esbuild.build({
   entryPoints: ["./src/index.js"],
   bundle: true,
   minify: true,
   sourcemap: true,
-  outfile: "dist",
+  outfile: "dist/index.js",
   format: "esm",
+});
+
+esbuild.build({
+  entryPoints: ["./src/index.js"],
+  bundle: true,
+  minify: true,
+  sourcemap: true,
+  outfile: "dist/index.cjs",
+  format: "cjs",
+  outExtension: { ".js": ".mjs" },
 });
