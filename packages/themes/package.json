@@ -12,7 +12,7 @@
     "./themes.css": "./dist/themes.css"
   },
   "scripts": {
-    "build": "npm run clean && npm run build:js && npm run build:type && npm run build:css",
+    "build": "esbuild src/index.ts  --minify --format=cjs  --bundle  --outfile=dist/index.js",
     "build:js": "node build.js",
     "build:type": "tsc --emitDeclarationOnly",
     "clean": "rm -rf dist",
