@@ -6,12 +6,20 @@ import fs from "fs";
 //   --gray-900: #171923
 // }
 
+/**
+ * @description 색상변수를 css파일을 자동으로 생성하는 함수
+ */
+
 const toCssCasting = (str) => {
   return str
     .replace(/([a-z])(\d)/, "$1-$2")
     .replace(/([A-Z])/g, "-$1")
     .toLowerCase();
 };
+
+Object.entries(theme.vars).forEach(([key, value]) => {
+  console.log(key, value);
+});
 
 const generateThemeCssVariables = () => {
   const cssString = [];
