@@ -1,15 +1,10 @@
 import * as theme from "../dist/index.js";
 import fs from "fs";
 
-// theme.css
-// :root {
-//   --gray-900: #171923
-// }
-
 /**
- * @description 색상변수를 css파일을 자동으로 생성하는 함수
+ * @description camelCase를 kebab-case로 변경하는 함수
+ * @param str
  */
-
 const toCssCasting = (str) => {
   return str
     .replace(/([a-z])(\d)/, "$1-$2")
@@ -17,6 +12,14 @@ const toCssCasting = (str) => {
     .toLowerCase();
 };
 
+/**
+ * @description  css 변수를 자동으로 생성하는 함수
+ * theme.css
+ * :root {
+ * --gray-900: #171923
+ * --gray-800: #2d303e
+ * }
+ */
 const generateThemeCssVariables = () => {
   const cssString = [];
 
@@ -89,6 +92,10 @@ const generateThemeCssVariables = () => {
 //   line-height: 100%;
 // }
 
+/**
+ * @description 클래스변수를 css파일을 자동으로 생성하는 함수
+ * @returns
+ */
 const generateThemeCssClasses = () => {
   const cssString = [];
 
