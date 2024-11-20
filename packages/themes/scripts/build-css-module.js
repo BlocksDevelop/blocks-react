@@ -17,10 +17,6 @@ const toCssCasting = (str) => {
     .toLowerCase();
 };
 
-Object.entries(theme.vars).forEach(([key, value]) => {
-  console.log(key, value);
-});
-
 const generateThemeCssVariables = () => {
   const cssString = [];
 
