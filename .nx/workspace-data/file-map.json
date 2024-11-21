@@ -1,0 +1,287 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.1.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "yarn.lock",
+        "hash": "8882722957520281392"
+      },
+      {
+        "file": ".yarnrc.yml",
+        "hash": "5011469951337407309"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "9974681833445430258"
+      },
+      {
+        "file": "nx.json",
+        "hash": "18309398620532989203"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "15329797684824335884"
+      },
+      {
+        "file": "tsconfig.eslint.json",
+        "hash": "6981422439752316205"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "9797131051341130368"
+      },
+      {
+        "file": ".yarn/releases/yarn-4.5.1.cjs",
+        "hash": "4099108510173678777"
+      },
+      {
+        "file": "README.md",
+        "hash": "2131338340651061652"
+      },
+      {
+        "file": "package.json",
+        "hash": "1174150368637380651"
+      },
+      {
+        "file": ".github/PULL_REQUEST_TEMPLATE.md",
+        "hash": "5016382248614939567"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15229444604702400094"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "hash": "3612381169923180109"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "7049517333677081833"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/refactor-issue-template.md",
+        "hash": "14669175137657589831"
+      }
+    ],
+    "projectFileMap": {
+      "test": [
+        {
+          "file": "services/test/.gitignore",
+          "hash": "987422939859577920"
+        },
+        {
+          "file": "services/test/README.md",
+          "hash": "6471428582686096395"
+        },
+        {
+          "file": "services/test/eslint.config.js",
+          "hash": "14295233468073832176"
+        },
+        {
+          "file": "services/test/index.html",
+          "hash": "7407020656126537714"
+        },
+        {
+          "file": "services/test/package.json",
+          "hash": "3573034641075371829",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:eslint@9.15.0",
+            "npm:eslint-plugin-react-hooks@5.0.0",
+            "npm:eslint-plugin-react-refresh@0.4.14",
+            "npm:globals",
+            "npm:sass-embedded",
+            "npm:typescript",
+            "npm:typescript-eslint@8.15.0",
+            "npm:vite",
+            "@blocks/themes",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "services/test/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "services/test/src/App.tsx",
+          "hash": "13767634018856153328"
+        },
+        {
+          "file": "services/test/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "services/test/src/index.css",
+          "hash": "17745993903476134860"
+        },
+        {
+          "file": "services/test/src/main.tsx",
+          "hash": "1588053673549980867"
+        },
+        {
+          "file": "services/test/src/style/index.module.scss",
+          "hash": "4242662316756498732"
+        },
+        {
+          "file": "services/test/src/vite-env.d.ts",
+          "hash": "7856441258253745083"
+        },
+        {
+          "file": "services/test/tsconfig.app.json",
+          "hash": "3917478139113194451"
+        },
+        {
+          "file": "services/test/tsconfig.json",
+          "hash": "11226547063925144724"
+        },
+        {
+          "file": "services/test/tsconfig.node.json",
+          "hash": "12262193868857656205"
+        },
+        {
+          "file": "services/test/vite.config.ts",
+          "hash": "13144531941992273019"
+        }
+      ],
+      "@blocks/themes": [
+        {
+          "file": "packages/themes/build.js",
+          "hash": "15742735764247323333"
+        },
+        {
+          "file": "packages/themes/package.json",
+          "hash": "12036303263960236917",
+          "deps": [
+            "@blocks/esbuild-config",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/themes/scripts/build-css-module.js",
+          "hash": "2313810909763957690"
+        },
+        {
+          "file": "packages/themes/src/classes/index.d.ts",
+          "hash": "14874153686921477232"
+        },
+        {
+          "file": "packages/themes/src/classes/index.ts",
+          "hash": "16980293872951677454"
+        },
+        {
+          "file": "packages/themes/src/classes/typography.d.ts",
+          "hash": "17439377685274993557"
+        },
+        {
+          "file": "packages/themes/src/classes/typography.ts",
+          "hash": "1737226456848416719"
+        },
+        {
+          "file": "packages/themes/src/index.d.ts",
+          "hash": "5051740342712927388"
+        },
+        {
+          "file": "packages/themes/src/index.ts",
+          "hash": "12496849257317989786"
+        },
+        {
+          "file": "packages/themes/src/variables/box.d.ts",
+          "hash": "8535097545779055397"
+        },
+        {
+          "file": "packages/themes/src/variables/box.ts",
+          "hash": "9206704918404102394"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/index.d.ts",
+          "hash": "16067044052561609752"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/index.ts",
+          "hash": "6316174874431697322"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/scale.d.ts",
+          "hash": "13825339923779810162"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/scale.ts",
+          "hash": "12117047415002952022"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/dark.d.ts",
+          "hash": "12956363065636289770"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/dark.ts",
+          "hash": "11829123318318794238"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/index.d.ts",
+          "hash": "17639848047638776056"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/index.ts",
+          "hash": "4882138733323561826"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/light.d.ts",
+          "hash": "17642843712593174127"
+        },
+        {
+          "file": "packages/themes/src/variables/colors/static/light.ts",
+          "hash": "8264435437772186195"
+        },
+        {
+          "file": "packages/themes/src/variables/index.d.ts",
+          "hash": "17288868138055620940"
+        },
+        {
+          "file": "packages/themes/src/variables/index.ts",
+          "hash": "17309183189432464827"
+        },
+        {
+          "file": "packages/themes/src/variables/typography.d.ts",
+          "hash": "10652839459202001278"
+        },
+        {
+          "file": "packages/themes/src/variables/typography.ts",
+          "hash": "1888759767589057909"
+        },
+        {
+          "file": "packages/themes/tsconfig.json",
+          "hash": "9838581208239668351"
+        }
+      ],
+      "@blocks/esbuild-config": [
+        {
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
+        },
+        {
+          "file": "packages/esbuild-config/index.js",
+          "hash": "6014632190694086000"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "2533337159967761512",
+          "deps": [
+            "npm:esbuild"
+          ]
+        }
+      ]
+    }
+  }
+}

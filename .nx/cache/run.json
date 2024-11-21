@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "nx build test",
+    "startTime": "2024-11-21T23:42:19.694Z",
+    "endTime": "2024-11-21T23:42:29.728Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "@blocks/esbuild-config:build",
+      "target": "build",
+      "projectName": "@blocks/esbuild-config",
+      "hash": "7885988216016098297",
+      "startTime": "2024-11-21T23:42:19.728Z",
+      "endTime": "2024-11-21T23:42:20.779Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@blocks/themes:build",
+      "target": "build",
+      "projectName": "@blocks/themes",
+      "hash": "12712629050016873850",
+      "startTime": "2024-11-21T23:42:20.782Z",
+      "endTime": "2024-11-21T23:42:26.895Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "test:build",
+      "target": "build",
+      "projectName": "test",
+      "hash": "15031994026475396322",
+      "startTime": "2024-11-21T23:42:26.899Z",
+      "endTime": "2024-11-21T23:42:29.727Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+src/App.tsx(5,22): error TS7016: Could not find a declaration file for module '@blocks/themes'. 'C:/Users/yho79/blocks-react/packages/themes/dist/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/blocks__themes` if it exists or add a new declaration (.d.ts) file containing `declare module '@blocks/themes';`
