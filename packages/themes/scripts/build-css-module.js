@@ -91,7 +91,7 @@ const generateThemeCssVariables = () => {
 //   font-weight: 700;
 //   line-height: 100%;
 // }
-
+1;
 /**
  * @description 클래스변수를 css파일을 자동으로 생성하는 함수
  * @returns
