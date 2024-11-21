@@ -19,7 +19,7 @@
     "build:css": "node ./scripts/build-css-module.js"
   },
   "devDependencies": {
-    "esbuild": "^0.16.17",
+    "@blocks/esbuild-config": "workspace:^",
     "typescript": "^5.6.3"
   }
 }

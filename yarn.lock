@@ -221,11 +221,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@blocks/esbuild-config@workspace:^, @blocks/esbuild-config@workspace:packages/esbuild-config":
+  version: 0.0.0-use.local
+  resolution: "@blocks/esbuild-config@workspace:packages/esbuild-config"
+  dependencies:
+    esbuild: "npm:0.16.17"
+  languageName: unknown
+  linkType: soft
+
 "@blocks/themes@workspace:^, @blocks/themes@workspace:packages/themes":
   version: 0.0.0-use.local
   resolution: "@blocks/themes@workspace:packages/themes"
   dependencies:
-    esbuild: "npm:^0.16.17"
+    "@blocks/esbuild-config": "workspace:^"
     typescript: "npm:^5.6.3"
   languageName: unknown
   linkType: soft
@@ -2060,7 +2068,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.16.17":
+"esbuild@npm:0.16.17":
   version: 0.16.17
   resolution: "esbuild@npm:0.16.17"
   dependencies:
