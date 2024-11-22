@@ -1,0 +1,23 @@
+{
+  "name": "blocks-react-layout",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:js && yarn build:type",
+    "build:js": "node build.js",
+    "build:type": "yarn tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@blocks/esbuild-config": "workspace:^",
+    "typescript": "^5.6.3"
+  }
+}

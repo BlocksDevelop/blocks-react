@@ -1,5 +1,5 @@
 {
-  "name": "blocks-react",
+  "name": "blocks-react-monorepo",
   "version": "0.0.0",
   "scripts": {
     "build": "nx build",
