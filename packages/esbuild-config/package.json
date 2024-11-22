@@ -1,0 +1,14 @@
+{
+  "name": "@blocks/esbuild-config",
+  "packageManager": "yarn@4.5.1",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "build": "echo \"tada\""
+  },
+  "dependencies": {
+    "esbuild": "0.16.17"
+  }
+}
