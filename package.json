@@ -1,16 +1,19 @@
 {
-  "name": "blocks-react",
+  "name": "blocks-react-monorepo",
   "version": "0.0.0",
   "scripts": {
     "build": "nx build",
-    "graph": "nx run-many --target=build --graph"
+    "graph": "nx run-many --target=build --graph",
+    "dev:storybook": "nx storybook @blocks/storybook",
+    "dev:packages": "nx run-many --target=dev --projects='@blocks/react-components-*'",
+    "dev:all": "yarn dev:storybook & yarn dev:packages"
   },
   "packageManager": "yarn@4.5.1",
   "workspaces": [
-    "packages/*",
-    "services/*"
+    "packages/*/**"
   ],
   "devDependencies": {
+    "@vanilla-extract/esbuild-plugin": "^2.3.12",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.28.1",
