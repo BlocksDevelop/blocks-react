@@ -32,7 +32,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "15229444604702400094"
+        "hash": "10639542017206723131"
       },
       {
         "file": ".prettierrc",
@@ -56,7 +56,7 @@
       },
       {
         "file": "package.json",
-        "hash": "10819605299396862225"
+        "hash": "12764692383788660243"
       },
       {
         "file": "tsconfig.base.json",
@@ -68,18 +68,25 @@
       },
       {
         "file": "yarn.lock",
-        "hash": "14156408303899423906"
+        "hash": "13640444090584150173"
       }
     ],
     "projectFileMap": {
-      "@blocks/storybook": [
+      "@blocks/esbuild-config": [
         {
-          "file": "packages/storybook/README.md",
-          "hash": "2624393197388313932"
+          "file": "packages/esbuild-config/README.md",
+          "hash": "9811778230406945702"
         },
         {
-          "file": "packages/storybook/package.json",
-          "hash": "2417225012330292129"
+          "file": "packages/esbuild-config/index.js",
+          "hash": "6014632190694086000"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "2533337159967761512",
+          "deps": [
+            "npm:esbuild"
+          ]
         }
       ],
       "@blocks/react-components-layout": [
@@ -89,7 +96,7 @@
         },
         {
           "file": "packages/blocks-react/components/layout/package.json",
-          "hash": "1083659292063032178",
+          "hash": "15576288224219425767",
           "deps": [
             "@blocks/themes",
             "npm:react",
@@ -107,7 +114,7 @@
         },
         {
           "file": "packages/blocks-react/components/layout/src/block.css.ts",
-          "hash": "11826543466938031565"
+          "hash": "8368706318290994019"
         },
         {
           "file": "packages/blocks-react/components/layout/src/index.ts",
@@ -228,21 +235,46 @@
           "hash": "9838581208239668351"
         }
       ],
-      "@blocks/esbuild-config": [
+      "@blocks/storybook": [
         {
-          "file": "packages/esbuild-config/README.md",
-          "hash": "9811778230406945702"
+          "file": "packages/storybook/.storybook/main.js",
+          "hash": "8608782552442256176"
         },
         {
-          "file": "packages/esbuild-config/index.js",
-          "hash": "6014632190694086000"
+          "file": "packages/storybook/.storybook/preview.js",
+          "hash": "17559343359447691019"
         },
         {
-          "file": "packages/esbuild-config/package.json",
-          "hash": "2533337159967761512",
+          "file": "packages/storybook/.storybook/style.css",
+          "hash": "10680256900373277349"
+        },
+        {
+          "file": "packages/storybook/README.md",
+          "hash": "2624393197388313932"
+        },
+        {
+          "file": "packages/storybook/package.json",
+          "hash": "1896972847263798727",
           "deps": [
-            "npm:esbuild"
+            "@blocks/react-components-layout",
+            "@blocks/themes",
+            "npm:@chromatic-com/storybook",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/react",
+            "npm:@storybook/react-vite",
+            "npm:@storybook/test",
+            "npm:prop-types",
+            "npm:storybook",
+            "npm:storybook-addon-root-attributes",
+            "npm:vite"
           ]
+        },
+        {
+          "file": "packages/storybook/stories/components/Layout/Block.stories.tsx",
+          "hash": "422903095731104575"
         }
       ]
     }
