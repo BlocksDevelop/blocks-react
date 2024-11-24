@@ -133,6 +133,34 @@
         "implicitDependencies": []
       }
     },
+    "@blocks/storybook": {
+      "name": "@blocks/storybook",
+      "type": "lib",
+      "data": {
+        "root": "packages/storybook",
+        "sourceRoot": "packages/storybook",
+        "name": "@blocks/storybook",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {}
+        },
+        "targets": {
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@blocks/themes": {
       "name": "@blocks/themes",
       "type": "lib",
@@ -5793,6 +5821,7 @@
         "type": "static"
       }
     ],
+    "@blocks/storybook": [],
     "@blocks/themes": [
       {
         "source": "@blocks/themes",
