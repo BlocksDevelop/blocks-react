@@ -7008,17 +7008,17 @@
     "@blocks/react-components-layout": [
       {
         "source": "@blocks/react-components-layout",
-        "target": "@blocks/themes",
-        "type": "static"
-      },
-      {
-        "source": "@blocks/react-components-layout",
         "target": "npm:react",
         "type": "static"
       },
       {
         "source": "@blocks/react-components-layout",
         "target": "@blocks/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@blocks/react-components-layout",
+        "target": "@blocks/themes",
         "type": "static"
       },
       {
