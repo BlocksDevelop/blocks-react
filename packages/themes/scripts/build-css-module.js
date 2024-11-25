@@ -1,5 +1,5 @@
-import * as theme from "../dist/index.js";
-import fs from "fs";
+import * as theme from '../dist/index.js';
+import fs from 'fs';
 
 /**
  * @description camelCase를 kebab-case로 변경하는 함수
@@ -7,8 +7,8 @@ import fs from "fs";
  */
 const toCssCasting = (str) => {
   return str
-    .replace(/([a-z])(\d)/, "$1-$2")
-    .replace(/([A-Z])/g, "-$1")
+    .replace(/([a-z])(\d)/, '$1-$2')
+    .replace(/([A-Z])/g, '-$1')
     .toLowerCase();
 };
 
@@ -24,42 +24,32 @@ const generateThemeCssVariables = () => {
   const cssString = [];
 
   Object.entries(theme.vars).forEach(([key, value]) => {
-    if (key === "colors") {
+    if (key === 'colors') {
       Object.entries(value.$static).forEach(([colorKey, colorValue]) => {
-        if (colorKey === "light") {
-          const selector = ":root";
+        if (colorKey === 'light') {
+          const selector = ':root';
 
           const cssVariables = Object.entries(colorValue)
             .map(([mainKey, mainValue]) =>
               Object.entries(mainValue)
-                .map(
-                  ([subKey, subValue]) =>
-                    `--${toCssCasting(mainKey)}-${toCssCasting(
-                      subKey
-                    )}: ${subValue};`
-                )
-                .join("\n")
+                .map(([subKey, subValue]) => `--${toCssCasting(mainKey)}-${toCssCasting(subKey)}: ${subValue};`)
+                .join('\n'),
             )
-            .join("\n");
+            .join('\n');
 
           return cssString.push(`${selector} {\n${cssVariables}\n}`);
         }
 
-        if (colorKey === "dark") {
-          const selector = ":root .theme-dark";
+        if (colorKey === 'dark') {
+          const selector = ':root .theme-dark';
 
           const cssVariables = Object.entries(colorValue)
             .map(([mainKey, mainValue]) =>
               Object.entries(mainValue)
-                .map(
-                  ([subKey, subValue]) =>
-                    `--${toCssCasting(mainKey)}-${toCssCasting(
-                      subKey
-                    )}: ${subValue};`
-                )
-                .join("\n")
+                .map(([subKey, subValue]) => `--${toCssCasting(mainKey)}-${toCssCasting(subKey)}: ${subValue};`)
+                .join('\n'),
             )
-            .join("\n");
+            .join('\n');
 
           return cssString.push(`${selector} {\n${cssVariables}\n}`);
         }
@@ -67,19 +57,15 @@ const generateThemeCssVariables = () => {
 
       return;
     }
-
-    const selector = ":root";
+    const selector = ':root';
 
     const cssVariables = Object.entries(value)
       .map(([mainKey, mainValue]) =>
         Object.entries(mainValue)
-          .map(
-            ([subKey, subValue]) =>
-              `--${toCssCasting(mainKey)}-${toCssCasting(subKey)}: ${subValue};`
-          )
-          .join("\n")
+          .map(([subKey, subValue]) => `--${toCssCasting(mainKey)}-${toCssCasting(subKey)}: ${subValue};`)
+          .join('\n'),
       )
-      .join("\n");
+      .join('\n');
 
     return cssString.push(`${selector} {\n${cssVariables}\n}`);
   });
@@ -104,22 +90,17 @@ const generateThemeCssClasses = () => {
       .map(([mainKey, mainValue]) =>
         Object.entries(mainValue)
           .map(([subKey, subValue]) => {
-            const className = `.${toCssCasting(mainKey)}${toCssCasting(
-              subKey
-            )}`;
+            const className = `.${toCssCasting(mainKey)}${toCssCasting(subKey)}`;
 
             const styleProperties = Object.entries(subValue)
-              .map(
-                ([styleKey, styleValue]) =>
-                  `${toCssCasting(styleKey)}: ${styleValue};`
-              )
-              .join("\n");
+              .map(([styleKey, styleValue]) => `${toCssCasting(styleKey)}: ${styleValue};`)
+              .join('\n');
 
             return `${className} {\n${styleProperties}\n}`;
           })
-          .join("\n")
+          .join('\n'),
       )
-      .join("\n");
+      .join('\n');
 
     cssString.push(cssClasses);
   });
@@ -131,7 +112,7 @@ const generateThemeCss = () => {
   const variables = generateThemeCssVariables();
   const classes = generateThemeCssClasses();
 
-  fs.writeFileSync("dist/themes.css", [...variables, ...classes].join("\n"));
+  fs.writeFileSync('./dist/themes.css', [...variables, ...classes].join('\n'));
 };
 
 generateThemeCss();
