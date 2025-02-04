@@ -1,0 +1,35 @@
+{
+  "name": "@blocks/react-components-layout",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style.css": "./dist/index.css"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:js && yarn build:type",
+    "build:js": "node build.js",
+    "build:type": "yarn tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist",
+    "dev": "yarn build:js --watch && yarn build:type --watch"
+  },
+  "devDependencies": {
+    "@blocks/esbuild-config": "workspace:^",
+    "@blocks/themes": "workspace:^",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vanilla-extract/css": "^1.16.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@blocks/themes": "workspace:^",
+    "react": "*"
+  }
+}
